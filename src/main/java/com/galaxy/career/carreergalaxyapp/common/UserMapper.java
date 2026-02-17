@@ -18,6 +18,7 @@ public class UserMapper {
     public static LoginResponseDto toLoginResponse(User user) {
 
         LoginResponseDto dto = new LoginResponseDto();
+        dto.setName(user.getName());
         dto.setEmail(user.getEmail());
 
         return dto;
